@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- WhatsApp Inquiry Prefill - Main Booking Inquiry Bar ---
   const bookingForm = document.getElementById('booking-inquiry-form');
-  const whatsAppNumber = '27821234567'; // Guest house contact number
+  const whatsAppNumber = '26876324310'; // Guest house contact number
 
   if (bookingForm) {
     bookingForm.addEventListener('submit', (e) => {
