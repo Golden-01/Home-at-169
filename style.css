@@ -11,6 +11,7 @@
   --color-champagne: #F5E6D3;       /* Light champagne gold for secondary accents */
   --color-champagne-gold: #C49B6C;  /* Warm champagne bronze for main buttons and highlights */
   --color-champagne-hover: #B08658; /* Hover state for champagne gold */
+  --color-nav-cream: #F8F4EE;
   
   --color-white: #FFFFFF;
   --color-whatsapp: #25D366;
@@ -239,10 +240,12 @@ header.scrolled {
 
 .nav-link {
   font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--color-brown-medium);
+  font-weight: 600;
+  color: var(--color-nav-cream);
   position: relative;
   padding: 5px 0;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.35);
 }
 
 .nav-link::after {
@@ -257,7 +260,7 @@ header.scrolled {
 }
 
 .nav-link:hover, .nav-link.active {
-  color: var(--color-brown-dark);
+  color: var(--color-champagne);
 }
 
 .nav-link:hover::after, .nav-link.active::after {
