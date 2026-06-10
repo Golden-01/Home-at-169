@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Home at 169, a luxury self-catering guest house offering premium comfort, modern amenities, secure parking, and a peaceful atmosphere. Book your perfect stay.">
+  <title>Home at 169 | Premium Self-Catering Guest House</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="#" class="logo" id="logo-link">
+        HOME AT 169
+        <span>Guest House</span>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#" class="nav-link active" id="link-home">Home</a>
+        <a href="#about" class="nav-link" id="link-about">About Us</a>
+        <a href="#amenities" class="nav-link" id="link-amenities">Amenities</a>
+        <a href="#gallery" class="nav-link" id="link-gallery">Gallery</a>
+        <a href="#contact" class="nav-link" id="link-contact">Contact</a>
+      </nav>
+      
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-primary" id="btn-book-nav">Book Now</a>
+      </div>
+      
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-background">
+        <img src="images/hero_bg.png" alt="Luxurious living space at Home at 169">
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-tagline">Self-Catering Luxury</span>
+          <h1 class="hero-title">Your Cozy Sanctuary in Modern Comfort</h1>
+          <p class="hero-desc">Experience the perfect blend of luxury, privacy, and home comfort at Home at 169. Designed for travelers who appreciate quality self-catering living.</p>
+          <div class="hero-btns">
+            <a href="#contact" class="btn btn-primary" id="btn-hero-book">Check Availability</a>
+            <a href="#about" class="btn btn-secondary" id="btn-hero-about">Explore More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Bar Section -->
+    <div class="booking-bar-wrapper">
+      <div class="container">
+        <div class="booking-bar">
+          <form class="booking-form" id="booking-inquiry-form" onsubmit="event.preventDefault();">
+            <div class="booking-group">
+              <label for="check-in-date">Check-In</label>
+              <input type="date" id="check-in-date" required>
+            </div>
+            
+            <div class="booking-group">
+              <label for="check-out-date">Check-Out</label>
+              <input type="date" id="check-out-date" required>
+            </div>
+            
+            <div class="booking-group">
+              <label for="guest-count">Guests</label>
+              <select id="guest-count">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+              </select>
+            </div>
+
+            <div class="booking-group">
+              <label for="room-type">Accommodation Type</label>
+              <select id="room-type">
+                <option value="luxury-suite">Luxury Master Suite</option>
+                <option value="entire-house">Entire Guest House</option>
+              </select>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" id="booking-submit-btn">Check Rates</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <span class="section-subtitle">About Us</span>
+            <h2 class="section-title" style="display: block; margin-bottom: 25px;">Welcome to Home at 169</h2>
+            <div class="about-text">
+              <p>Home at 169 is a premium, beautifully curated self-catering guest house designed to offer a relaxing, private sanctuary. Whether you are traveling for business, a peaceful getaway, or family relocation, we provide a sophisticated environment tailored to your needs.</p>
+              <p>Our space features modern interior finishes, spacious living areas, and a fully equipped kitchen. We pride ourselves on pristine cleanliness, attention to detail, and hosting hospitality that makes you feel immediately at home.</p>
+            </div>
+            <div class="about-features">
+              <div class="about-feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Pristine Cleanliness</span>
+              </div>
+              <div class="about-feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Absolute Privacy</span>
+              </div>
+              <div class="about-feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Modern Secure Premises</span>
+              </div>
+              <div class="about-feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Central Location</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="about-image-card">
+              <img src="images/bedroom.png" alt="Cozy guest bedroom at Home at 169">
+            </div>
+            <div class="about-image-badge">
+              <span class="number">5★</span>
+              <span class="label">Guest Rating</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section class="section section-bg" id="amenities">
+      <div class="container text-center">
+        <span class="section-subtitle">Comfort & Convenience</span>
+        <h2 class="section-title">Premium Amenities</h2>
+        
+        <div class="amenities-grid" style="margin-top: 50px;">
+          <!-- Amenity 1: Wi-Fi -->
+          <div class="amenity-card">
+            <div class="amenity-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 0 1 7.424 0M5.106 11.856a9.75 9.75 0 0 1 13.788 0M1.924 8.674a14.25 14.25 0 0 1 20.152 0M12.53 18.22a1.5 1.5 0 1 1-1.06-1.06 1.5 1.5 0 0 1 1.06 1.06Z" />
+              </svg>
+            </div>
+            <h4>High-Speed Wi-Fi</h4>
+            <p>Fast, uncapped fiber internet ideal for working remotely, streaming, and staying connected.</p>
+          </div>
+
+          <!-- Amenity 2: Fully Equipped Kitchen -->
+          <div class="amenity-card">
+            <div class="amenity-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+              </svg>
+            </div>
+            <h4>Equipped Kitchen</h4>
+            <p>Full-sized stove, oven, microwave, refrigerator, and premium cutlery for all self-catering needs.</p>
+          </div>
+
+          <!-- Amenity 3: Free Secure Parking -->
+          <div class="amenity-card">
+            <div class="amenity-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.599-3.75A11.952 11.952 0 0 1 12 2.714Z" />
+              </svg>
+            </div>
+            <h4>Secure Parking</h4>
+            <p>Off-street parking inside secure gates with electric fencing, CCTV surveillance, and 24/7 safety.</p>
+          </div>
+
+          <!-- Amenity 4: Dedicated Workspace -->
+          <div class="amenity-card">
+            <div class="amenity-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25" />
+              </svg>
+            </div>
+            <h4>Dedicated Workspace</h4>
+            <p>A quiet workspace table with comfortable ergonomic seating and accessible double plug points.</p>
+          </div>
+
+          <!-- Amenity 5: Private Entrance -->
+          <div class="amenity-card">
+            <div class="amenity-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 0 1 3 3m3 0a6 6 0 0 1-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1 1 21.75 8.25Z" />
+              </svg>
+            </div>
+            <h4>Private Entrance</h4>
+            <p>Access your suite independently at any time of day with a digital lock security setup.</p>
+          </div>
+
+          <!-- Amenity 6: Patio & BBQ -->
+          <div class="amenity-card">
+            <div class="amenity-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.467 5.99 5.99 0 0 0-1.925 3.546 5.974 5.974 0 0 1-2.133-1A3.75 3.75 0 0 0 12 18Z" />
+              </svg>
+            </div>
+            <h4>Patio & Braai Area</h4>
+            <p>Enjoy your personal outdoor space complete with cozy seating, dining table, and a wood braai/BBQ setup.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section" id="gallery">
+      <div class="container text-center">
+        <span class="section-subtitle">Visual Tour</span>
+        <h2 class="section-title">Explore Home at 169</h2>
+        
+        <!-- Gallery Categories -->
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">All Photos</button>
+          <button class="filter-btn" data-filter="bedrooms">Bedrooms</button>
+          <button class="filter-btn" data-filter="living">Living & Kitchen</button>
+          <button class="filter-btn" data-filter="outdoors">Outdoors</button>
+        </div>
+        
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Item 1: Living Room -->
+          <div class="gallery-item" data-category="living" data-src="images/hero_bg.png" data-caption="Warm and sunlit modern guest house living lounge">
+            <img src="images/hero_bg.png" alt="Guest House Living Room">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Living & Kitchen</span>
+              <h4 class="gallery-title">Luxury Guest Lounge</h4>
+            </div>
+          </div>
+          
+          <!-- Item 2: Master Bedroom -->
+          <div class="gallery-item" data-category="bedrooms" data-src="images/bedroom.png" data-caption="Luxurious queen bedroom with premium cotton linen and warm lighting">
+            <img src="images/bedroom.png" alt="Guest House Master Bedroom">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Bedrooms</span>
+              <h4 class="gallery-title">Master Suite</h4>
+            </div>
+          </div>
+          
+          <!-- Item 3: Kitchen -->
+          <div class="gallery-item" data-category="living" data-src="images/kitchen.png" data-caption="Fully equipped self-catering modern kitchen space">
+            <img src="images/kitchen.png" alt="Guest House Self-Catering Kitchen">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Living & Kitchen</span>
+              <h4 class="gallery-title">Equipped Kitchen</h4>
+            </div>
+          </div>
+          
+          <!-- Item 4: Patio -->
+          <div class="gallery-item" data-category="outdoors" data-src="images/patio.png" data-caption="Relaxing private outdoor deck with comfortable seating and surrounding garden">
+            <img src="images/patio.png" alt="Guest House Private Patio Deck">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Outdoors</span>
+              <h4 class="gallery-title">Private Patio & Garden</h4>
+            </div>
+          </div>
+
+          <!-- Item 5: Cozy Bedroom Corner (Re-use/alternate) -->
+          <div class="gallery-item" data-category="bedrooms" data-src="images/bedroom.png" data-caption="Plush decorative pillows and comfortable bedding textures">
+            <img src="images/bedroom.png" alt="Cozy Bedroom Bedding Details">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Bedrooms</span>
+              <h4 class="gallery-title">Comfort Details</h4>
+            </div>
+          </div>
+
+          <!-- Item 6: Braai Patio Area (Re-use/alternate) -->
+          <div class="gallery-item" data-category="outdoors" data-src="images/patio.png" data-caption="Warm ambient evening setting on the wooden patio deck">
+            <img src="images/patio.png" alt="Patio Deck Evening View">
+            <div class="gallery-overlay">
+              <span class="gallery-tag">Outdoors</span>
+              <h4 class="gallery-title">Evening Deck Vibes</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Booking Inquiry Section -->
+    <section class="section section-bg" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Information Block -->
+          <div class="contact-info">
+            <div>
+              <span class="section-subtitle">Get In Touch</span>
+              <h2 class="section-title" style="display: block; margin-bottom: 25px;">Contact Information</h2>
+              <p style="color: var(--color-brown-light); margin-bottom: 15px;">Have questions about availability, long-term booking rates, or guest amenities? Reach out to us directly via call, email, or WhatsApp message.</p>
+            </div>
+            
+            <div class="contact-details">
+              <!-- Detail 1: Address -->
+              <div class="contact-detail-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4>Our Location</h4>
+                  <p>169 Guesthouse Road, Sandton, Johannesburg, South Africa</p>
+                </div>
+              </div>
+
+              <!-- Detail 2: Phone -->
+              <div class="contact-detail-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-1.514 2.02a13.783 13.783 0 0 1-5.717-5.717l2.02-1.514c.362-.272.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4>Phone & Booking Support</h4>
+                  <p><a href="tel:+27821234567">+27 82 123 4567</a></p>
+                </div>
+              </div>
+
+              <!-- Detail 3: Email -->
+              <div class="contact-detail-item">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h4>Email Address</h4>
+                  <p><a href="mailto:info@homeat169.co.za">info@homeat169.co.za</a></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Custom Styled Map Card -->
+            <div class="map-card">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 32px; height: 32px;">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8m-6-3h.008v.008H9V11.25Zm.008 3h.008v.008H9V14.25Zm0 3h.008v.008H9V17.25Zm3-6h.008v.008H12V11.25Zm.008 3h.008v.008H12V14.25Zm0 3h.008v.008H12V17.25Zm3-6h.008v.008H15V11.25Zm.008 3h.008v.008H15V14.25Zm0 3h.008v.008H15V17.25Z" />
+                </svg>
+                <span>Interactive Map Navigation</span>
+                <p style="margin-top: 5px;">Secure gated access. Easy proximity to major business hubs and shopping centers.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Inquiry Form -->
+          <div class="contact-form-card">
+            <h3>Send an Inquiry</h3>
+            <form id="contact-inquiry-form">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="contact-name">Full Name *</label>
+                  <input type="text" id="contact-name" placeholder="John Doe" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="contact-email">Email Address *</label>
+                  <input type="email" id="contact-email" placeholder="john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-phone">Phone Number</label>
+                  <input type="tel" id="contact-phone" placeholder="+27 82 123 4567">
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-guests">Number of Guests</label>
+                  <select id="contact-guests">
+                    <option value="1">1 Guest</option>
+                    <option value="2" selected>2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-arrival">Estimated Arrival</label>
+                  <input type="date" id="contact-arrival">
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-departure">Estimated Departure</label>
+                  <input type="date" id="contact-departure">
+                </div>
+
+                <div class="form-group full-width">
+                  <label for="contact-message">Your Message *</label>
+                  <textarea id="contact-message" placeholder="Hi! I would like to inquire about booking a stay..." required></textarea>
+                </div>
+              </div>
+              
+              <button type="submit" class="btn btn-primary" style="width: 100%;" id="contact-submit-btn">Send Inquiry via WhatsApp</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            HOME AT 169
+            <span>Guest House</span>
+          </a>
+          <p>A premier self-catering hospitality destination offering privacy, modern design, comfort, and state-of-the-art secure accommodations.</p>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-links">
+          <h4>Quick Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact & Bookings</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Support -->
+        <div class="footer-contact">
+          <h4>Booking Office</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+              </svg>
+              <span>169 Guesthouse Road, Sandton, Johannesburg, South Africa</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-1.514 2.02a13.783 13.783 0 0 1-5.717-5.717l2.02-1.514c.362-.272.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+              </svg>
+              <span>+27 82 123 4567</span>
+            </li>
+            <li class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+              </svg>
+              <span>info@homeat169.co.za</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Home at 169 Guest House. All Rights Reserved. Designed with Excellence.</p>
+        <div class="social-links">
+          <!-- Facebook Icon -->
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/>
+            </svg>
+          </a>
+          <!-- Instagram Icon -->
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal Viewer -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous Image">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+      </svg>
+    </button>
+    <div class="lightbox-content">
+      <img src="" alt="Expanded View" class="lightbox-image" id="lightbox-image">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next Image">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/27821234567?text=Hi%20Home%20at%20169%2C%20I'd%20like%20to%20inquire%20about%20availability." class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.517 2.266 2.27 3.51 5.276 3.508 8.48-.003 6.66-5.338 11.999-11.948 11.999-2.005-.001-3.973-.504-5.714-1.463L0 24zm6.59-4.846c1.6.95 3.397 1.453 5.24 1.457h.006c5.879 0 10.665-4.783 10.669-10.664.002-2.848-1.102-5.526-3.109-7.536C17.348 4.4 14.673 3.293 11.82 3.293c-5.88 0-10.666 4.784-10.67 10.666-.001 1.899.5 3.75 1.452 5.372l-.956 3.493 3.58-.938zM17.52 14.3c-.31-.154-1.834-.903-2.118-1.006-.283-.103-.49-.155-.696.154-.206.31-.8.1-.98-.206-.18-.31-.188-.412.05-.72.206-.258.31-.515.464-.824.154-.31.077-.567-.038-.824-.116-.258-.98-2.368-1.344-3.244-.355-.85-.716-.735-1.006-.75-.258-.013-.567-.016-.876-.016-.31 0-.812.116-1.237.58-.425.464-1.624 1.587-1.624 3.87 0 2.28 1.66 4.485 1.892 4.794.232.31 3.268 4.99 7.916 6.996 1.106.477 1.97.76 2.64 1.002 1.05.333 2.007.286 2.763.174.843-.127 1.834-.75 2.09-1.47.258-.72.258-1.34.18-1.47-.076-.13-.282-.206-.593-.36z"/>
+    </svg>
+    <div class="whatsapp-tooltip">Chat with Home at 169</div>
+  </a>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
