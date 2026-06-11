@@ -214,13 +214,8 @@ header.scrolled {
 }
 
 .logo {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  color: var(--color-brown-dark);
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 
 .logo span {
@@ -232,6 +227,11 @@ header.scrolled {
   margin-top: -3px;
 }
 
+.logo img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
 .nav-menu {
   display: flex;
   align-items: center;
